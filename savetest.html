@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title> New Document </title>
+<meta name="Generator" content="EditPlus">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+function getimg() //另存为存放在服务器上图片到本地的方法
+{
+    event.returnValue=false;
+    show.window.location.href=location.href;
+    timer=setInterval(checkload,100)
+}
+
+function checkload()
+{
+    if(show.readyState!="complete")
+    {
+        //调用document.execCommand方法，'Saveas'表示打开文件另存为对话框命令
+        console.log(show.window.location.href)
+		show.document.execCommand('SaveAs');
+        clearInterval(timer)
+    }
+}  
+</script>
+</head>
+<body>
+    <img id="imgSrc" width="320px" height="200px" src="img/1.png" alt=""/>
+    <br>
+    <input id="btnSaveAs" type="button" value="另存为上图" onclick="getimg()"/>
+    <iframe src="" name="show"  style="width:0;height:0"></iframe>
+</body>
+</html>

@@ -1,0 +1,75 @@
+﻿body {
+    width: 100%;
+    text-align: center;
+    padding-top: 300px;
+
+}
+.add-sel {
+    width: 500px;
+    height: 60px;
+    font-size: 28px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: gray solid 1px;
+}
+.btn-start {
+    margin-left: 50px;
+    height: 60px;
+    background: rgb(0, 91, 171);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 28px;
+}
+.btn-city {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 60px;
+    background: dodgerblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 28px;
+}
+.btn-city-back {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 60px;
+    background: rgb(245,40,40);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 28px;
+    float: right;
+    margin-top: 40px;
+}
+.flow-pos {
+    width:50%;
+    height: 30%;
+    background: white;
+    position: absolute;
+    border: gray solid 1px;
+    border-radius: 5px;
+    top: 40%;
+    left: 25%;
+    display: none;
+    padding: 30px;
+    text-align: left;
+}
+.btn-city-back {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 60px;
+    background: rgb(245,40,40);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 28px;
+    float: right;
+    margin-top: 40px;
+}
+.add-root {
+    font-size: 28px;
+    padding-left: 20px;
+    font-family: "Microsoft YaHei light","Microsoft YaHei",'微软雅黑', '微软雅黑 light';
+}

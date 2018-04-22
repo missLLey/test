@@ -1,0 +1,40 @@
+﻿.step-container {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 230px;
+    width: 230px;
+    position: absolute;
+    top: 175px;
+    left: 1010px;
+}
+.step-container>.step-header {
+    height: 105px;
+    width: 230px;
+    border-bottom: 2px solid rgb(95,208,224);
+    color:rgb(61,140,140);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
+.step-container>.step-body {
+    height: 560px;
+    width: 230px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.step-container>.step-body>div{
+    text-align: center;
+    color: rgb(200, 200, 200);
+    font-size: 18px;
+    width: 230px;
+    min-height: 18px;
+}
+.step-container > .step-body >div:after{ content: url('../img/ico_nextstep.png'); display:block; }
+.step-container > .step-body >div:last-child:after{content:""}
+.step-container>.step-body>.active{
+    color:rgb(61,140,140);
+    animation: fade-in-ani 0.2s;
+}

@@ -1,0 +1,1022 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/swiper.min.css" />
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/Times.js"></script>
+<script src="js/inspur.swiper.min.js"></script>
+</head>
+
+<body>
+<!-- head区 -->
+<div class="head">
+	<h1><img src="img/1.png" height="80px" alt="" id="logo"></h1>
+</div>
+<!-- content区 -->
+<div class="content">
+    <h2 class="titleBig">Maintenance</h2>
+    <div class="contentBox">
+    	<ul id="tableBar" style="display:flex; justify-content:space-between;">
+    		<li class="current">Loader 1 </li>
+    		<li>Loader 2 </li>
+    		<li>Loader 3 </li>
+    		<li>Loader 4 </li>
+    		<li>Loader 5 </li>
+    		<li>Loader 6 </li>
+    		<li>Entrance</li>
+    		<li>Delivery </li>
+    		<li>Rejects </li>
+    		<li>Devices</li>
+    	</ul>
+        <!-- loader1 -->
+        <div class="loader cur">
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox1"><label for="checkbox1"></label>
+                </li>
+            	<li>
+                	<big>Command Card Feeding</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Card Detected in Stacker
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Card Out
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox2"><label for="checkbox2"></label>
+                </li>
+            	<li>
+                	<big>Command Stock Rotation</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Motor is On
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Motor is Off
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox3"><label for="checkbox3"></label>
+                </li>
+            	<li>
+                	<big>Command Head Down</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Head is up
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Head is down
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox4"><label for="checkbox4"></label>
+                </li>
+            	<li>
+                	<big>Stock Rotation home position</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Rotation is at home
+                    </p>
+                	<p>
+                    	<span></span>
+                    	Rotation isn't at home
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox5"><label for="checkbox5"></label>
+                </li>
+            	<li>
+                	<big>Command 5</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox6"><label for="checkbox6"></label>
+                </li>
+            	<li>
+                	<big>Command 6</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- loader2 -->
+        <div class="loader">
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox2-1"><label for="checkbox2-1"></label>
+                </li>
+            	<li>
+                	<big>Command Card Feeding</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Card Detected in Stacker
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Card Out
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox2-2"><label for="checkbox2-2"></label>
+                </li>
+            	<li>
+                	<big>Command Stock Rotation</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Motor is On
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Motor is Off
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox2-3"><label for="checkbox2-3"></label>
+                </li>
+            	<li>
+                	<big>Command Head Down</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Head is up
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Head is down
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox2-4"><label for="checkbox2-4"></label>
+                </li>
+            	<li>
+                	<big>Stock Rotation home position</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Rotation is at home
+                    </p>
+                	<p>
+                    	<span></span>
+                    	Rotation isn't at home
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox2-5"><label for="checkbox2-5"></label>
+                </li>
+            	<li>
+                	<big>Command 5</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox2-6"><label for="checkbox2-6"></label>
+                </li>
+            	<li>
+                	<big>Command 6</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- loader3 -->
+        <div class="loader">
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox3-1"><label for="checkbox3-1"></label>
+                </li>
+            	<li>
+                	<big>Command Card Feeding</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Card Detected in Stacker
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Card Out
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox3-2"><label for="checkbox3-2"></label>
+                </li>
+            	<li>
+                	<big>Command Stock Rotation</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Motor is On
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Motor is Off
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox3-3"><label for="checkbox3-3"></label>
+                </li>
+            	<li>
+                	<big>Command Head Down</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Head is up
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Head is down
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox3-4"><label for="checkbox3-4"></label>
+                </li>
+            	<li>
+                	<big>Stock Rotation home position</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Rotation is at home
+                    </p>
+                	<p>
+                    	<span></span>
+                    	Rotation isn't at home
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox3-5"><label for="checkbox3-5"></label>
+                </li>
+            	<li>
+                	<big>Command 5</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox3-6"><label for="checkbox3-6"></label>
+                </li>
+            	<li>
+                	<big>Command 6</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- loader4 -->
+        <div class="loader">
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox4-1"><label for="checkbox4-1"></label>
+                </li>
+            	<li>
+                	<big>Command Card Feeding</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Card Detected in Stacker
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Card Out
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox4-2"><label for="checkbox4-2"></label>
+                </li>
+            	<li>
+                	<big>Command Stock Rotation</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Motor is On
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Motor is Off
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox4-3"><label for="checkbox4-3"></label>
+                </li>
+            	<li>
+                	<big>Command Head Down</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Head is up
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Head is down
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox4-4"><label for="checkbox4-4"></label>
+                </li>
+            	<li>
+                	<big>Stock Rotation home position</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Rotation is at home
+                    </p>
+                	<p>
+                    	<span></span>
+                    	Rotation isn't at home
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox4-5"><label for="checkbox4-5"></label>
+                </li>
+            	<li>
+                	<big>Command 5</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox4-6"><label for="checkbox4-6"></label>
+                </li>
+            	<li>
+                	<big>Command 6</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- loader5 -->
+        <div class="loader">
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox5-1"><label for="checkbox5-1"></label>
+                </li>
+            	<li>
+                	<big>Command Card Feeding</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Card Detected in Stacker
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Card Out
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox5-2"><label for="checkbox5-2"></label>
+                </li>
+            	<li>
+                	<big>Command Stock Rotation</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Motor is On
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Motor is Off
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox5-3"><label for="checkbox5-3"></label>
+                </li>
+            	<li>
+                	<big>Command Head Down</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Head is up
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Head is down
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox5-4"><label for="checkbox5-4"></label>
+                </li>
+            	<li>
+                	<big>Stock Rotation home position</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Rotation is at home
+                    </p>
+                	<p>
+                    	<span></span>
+                    	Rotation isn't at home
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox5-5"><label for="checkbox5-5"></label>
+                </li>
+            	<li>
+                	<big>Command 5</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox5-6"><label for="checkbox5-6"></label>
+                </li>
+            	<li>
+                	<big>Command 6</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- loader6 -->
+        <div class="loader">
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox6-1"><label for="checkbox6-1"></label>
+                </li>
+            	<li>
+                	<big>Command Card Feeding</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Card Detected in Stacker
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Card Out
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox6-2"><label for="checkbox6-2"></label>
+                </li>
+            	<li>
+                	<big>Command Stock Rotation</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Motor is On
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Motor is Off
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox6-3"><label for="checkbox6-3"></label>
+                </li>
+            	<li>
+                	<big>Command Head Down</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Head is up
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Head is down
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox6-4"><label for="checkbox6-4"></label>
+                </li>
+            	<li>
+                	<big>Stock Rotation home position</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Rotation is at home
+                    </p>
+                	<p>
+                    	<span></span>
+                    	Rotation isn't at home
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox6-5"><label for="checkbox6-5"></label>
+                </li>
+            	<li>
+                	<big>Command 5</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox6-6"><label for="checkbox6-6"></label>
+                </li>
+            	<li>
+                	<big>Command 6</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- Entrance  -->
+        <div class="loader">
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox7-1"><label for="checkbox7-1"></label>
+                </li>
+            	<li>
+                	<big>Command Card Feeding</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Card Detected at entry
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Card In
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox7-2"><label for="checkbox7-2"></label>
+                </li>
+            	<li>
+                	<big>Command 2</big>
+                </li>
+            	<li>
+                	<big>Command 3</big>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox7-3"><label for="checkbox7-3"></label>
+                </li>
+            	<li>
+                	<big>Command Head Down</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Head is up
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Head is down
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- Delivery  -->
+        <div class="loader">
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox8-1"><label for="checkbox8-1"></label>
+                </li>
+            	<li>
+                	<big>Command delivery system</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Delivery system at left position
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Delivery system at right position
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox8-2"><label for="checkbox8-2"></label>
+                </li>
+            	<li>
+                	<big>Command card locked</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Card is locked
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Card is unlocked
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox8-3"><label for="checkbox8-3"></label>
+                </li>
+            	<li>
+                	<big>Command Head Down</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Head is up
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Head is down
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox8-4"><label for="checkbox8-4"></label>
+                </li>
+            	<li>
+                	<big>Delivery system home position</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Delivery system is at home
+                    </p>
+                	<p>
+                    	<span></span>
+                    	Delivery system isn't at home
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox8-5"><label for="checkbox8-5"></label>
+                </li>
+            	<li>
+                	<big>Command 5</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox8-6"><label for="checkbox8-6"></label>
+                </li>
+            	<li>
+                	<big>Command 6</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- Rejects  -->
+        <div class="loader">
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox9-1"><label for="checkbox9-1"></label>
+                </li>
+            	<li>
+                	<big>Command Rejects system</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Card out detected
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Card is In
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox9-2"><label for="checkbox9-2"></label>
+                </li>
+            	<li>
+                	<big>Command card to reject box 1</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Card is in reject box 1
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Home position
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox9-3"><label for="checkbox9-3"></label>
+                </li>
+            	<li>
+                	<big>Command card to reject box 2</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Card is in reject box 2
+                    </p>
+                	<p>
+                    	<span></span>
+                    	Home position
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox9-4"><label for="checkbox9-4"></label>
+                </li>
+            	<li>
+                	<big>Command Head Down</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Head is up
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Head is down
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox9-5"><label for="checkbox9-5"></label>
+                </li>
+            	<li>
+                	<big>Command 5</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        	<ul class="switch" style="display:flex;">
+            	<li>
+                    <input type="checkbox" class="btnSwitch" id="checkbox9-6"><label for="checkbox9-6"></label>
+                </li>
+            	<li>
+                	<big>Command 6</big>
+                </li>
+            	<li>
+                	<p>
+                    	<span></span>
+                    	Sensor 5 is active
+                    </p>
+                    <p>
+                    	<span></span>
+                    	Sensor 5 is inactive
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- Devices -->
+        <div class="loader">
+        	<h4 style="margin-top:200px; font-size:34px;">
+            	And any other device to test
+            </h4>
+        </div>
+    </div>
+</div>
+<!-- footer区 -->
+<div class="footer">
+    <div class="bottom-date-n">
+        <span class="date-time-n"></span><br/>
+        <span class="date-date-n"></span>
+    </div>
+    <button class="button exit exit5" onClick="location.href = '2loadOrUnload.html'"></button>
+</div>
+
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical',
+    loop: true,
+	
+});
+$(document).ready(function() {
+	$('.date-time-n').jtime({ format: 'HH:mm' });
+	$('.date-date-n').jtime({ format: 'yyyy年MM月dd日<br/>星期W' });
+});
+$('#tableBar li').click(function(e) {
+    $(this).addClass('current').siblings().removeClass('current');
+	var index = $(this).index();
+	//var num = $('.contentBox div').length;
+	console.log(index);
+	$('.contentBox .loader').eq(index).addClass('cur').siblings().removeClass('cur');
+});
+$('.btnSwitch').click(function(e) {
+	var str = $(this).parent();
+	var strParent = str.parent();
+	var num = strParent.index();
+	console.log(num);
+	if($(this).is(':checked')){	
+		$('.contentBox .loader.cur p').eq(1+num*2).children('span').css('background','url(img/btnCheck.png) no-repeat 0px -36px');
+		$('.contentBox .loader.cur p').eq(0+num*2).children('span').css('background','url(img/btnCheck.png) no-repeat 0px 0px');
+	}else{	
+		$('.contentBox .loader.cur p').eq(0+num*2).children('span').css('background','url(img/btnCheck.png) no-repeat 0px -36px');
+		$('.contentBox .loader.cur p').eq(1+num*2).children('span').css('background','url(img/btnCheck.png) no-repeat 0px 0px');
+	}
+});
+</script>
+</body>
+</html>

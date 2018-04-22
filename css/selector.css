@@ -1,0 +1,60 @@
+﻿.select-input {
+    background-color: rgb(224, 242, 255);
+    border: none;
+    box-shadow: 0px 3px 4px rgb(120, 140, 140) inset;
+    color: rgb(22, 102, 178);
+    font-size: 28px;
+    height: 60px;
+    letter-spacing: -2px;
+    line-height: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.select-input:-ms-input-placeholder {
+    color: rgb(196, 223, 244);
+    font-family: '微软雅黑 light', 微软雅黑;
+    font-size: 26px;
+    padding-left: 10px;
+    text-shadow: none;
+}
+.select-droper {
+    height: 60px;
+    width: 50px;
+    background: rgb(158, 211, 255);
+    border: none;
+    /*line-height: 60px;*/
+    font-size: 34px;
+    color: white;
+    left: -50px;
+    top: -5px;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 4px 5px rgb(22, 102, 178) inset;
+	text-align:center;
+}
+.selector-content {
+    background: white;
+    border: rgb(16, 122, 208) 1px solid;
+    padding: 10px 20px;
+    transform: translateY(-4px);
+    text-align: left;
+    position: absolute;
+    display: none;
+    z-index: 10000;
+}
+.selector-content span{
+    color: rgb(11, 94, 162);
+    font-size: 24px;
+    display: inline-block;
+    padding: 5px 30px;
+    min-width: 80px;
+    transition: background 0.2s;
+    
+}
+.selector-content span:active {
+    background: rgb(3, 177, 204);
+    color: white;
+}
+.select-line {
+    
+}

@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/ui.jqgrid.css" media="all" rel="stylesheet" type="text/css" />
+<link href="css/jquery-ui.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<link href="css/steps.css" rel="stylesheet">
+<link rel="stylesheet" href="css/swiper.min.css" />
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.ui-jqgrid tr.jqgrow td{ height: 55px;}
+</style>
+</head>
+
+<body id="div_print">
+<!-- head区 -->
+<div class="head">
+	<h1><img src="img/1.png" height="80px" alt="" id="logo"></h1>
+</div>
+<!-- content区 -->
+<div class="content">
+    <h2 class="titleBig">Inventory</h2>
+    <div class="tableBox">
+        <!--jqgrid start-->
+        <div id="jqgrid-wrapper" style="width:1080px;margin:0px 100px;">
+            <table id="list4"></table>
+            <div id="pager"></div>
+        </div>
+        <!--jqgrid end-->
+	</div>
+</div>
+<!-- footer区 -->
+<div class="footer">
+    <div class="bottom-date-n">
+        <span class="date-time-n"></span><br/>
+        <span class="date-date-n"></span>
+    </div>
+    <button class="button exchange printDetail" id="btnPrint" ></button>
+    <button class="button exchange saveDetail" id="export"></button>
+    <iframe id="HideFrm" style="display: none"></iframe> 
+    <button class="button exit exit2" onClick="location.href = '2loadOrUnload.html'"></button>
+</div>
+<script src="js/inspur.swiper.min.js"></script>
+<script type="text/javascript" src="js/common/jquery/jquery.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/Times.js"></script>
+<script src="js/steps.js"></script>
+<script type="text/javascript" src="js/common/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/common/bootstrap/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="js/common/bootstrap/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="js/common/dateTime.js"></script>
+<script type="text/javascript" src="js/jqGrid/grid.locale-cn.js"></script>
+<script type="text/javascript" src="js/common/jquery.jqGrid.min.js"></script>
+<script type="text/javascript" src="js/jqGrid/jquery.jqGrid.fluid.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical',
+    loop: true,
+	
+});
+$(document).ready(function() {
+	$('.date-time-n').jtime({ format: 'HH:mm' });
+	$('.date-date-n').jtime({ format: 'yyyy年MM月dd日<br/>星期W' });
+});
+	
+function informGetCardList(res)
+{
+		
+		res = 	[
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"},
+			{'ArtworkRef':'186XXXXX','TotalStock':'50','BarrelsDetail01':'50','BarrelsDetail02':'0','BarrelsDetail03':'0','BarrelsDetail04':'0','BarrelsDetail05':'0','BarrelsDetail06':'0',"Scraps":"10"}
+				];
+		var mydata = res;
+		//var mydata = JSON.parse(res);
+		
+		
+		var reader = {  
+			root: function(obj) { return mydata; },  
+			page: function(obj) { return 1; },   
+			total: function(obj) {  return 2; },  
+			records: function(obj) { return 8; },  
+			repeatitems : false
+		};
+		$("#list4").jqGrid('clearGridData');
+		$("#list4").setGridParam({data: mydata, reader: reader}).trigger('reloadGrid');
+
+
+		
+}
+$(document).ready(function() {
+
+	
+	jQuery("#list4").jqGrid({
+		datatype: "local",
+		height: 20,
+		colNames: ['Artwork Ref','Total Stock','1','2','3','4','5','6','Scraps'],
+		colModel: [{
+			name: 'ArtworkRef',
+			index: 'ArtworkRef',
+			width:'20%', 
+			align:'center',
+			height:400,
+		},
+		{
+			name: 'TotalStock',
+			index: 'TotalStock',
+			width:'20%', 
+			align:'center',
+			height:400,
+		},
+		{
+			name: 'BarrelsDetail01',
+			index: 'BarrelsDetail01',
+			width:'10%', 
+			align:'center',
+			height:400,
+		},
+		{
+			name: 'BarrelsDetail02',
+			index: 'BarrelsDetail02',
+			width:'10%', 
+			align:'center',
+			height:400,
+		},
+		{
+			name: 'BarrelsDetail03',
+			index: 'BarrelsDetail03',
+			width:'10%', 
+			align:'center',
+			height:400,
+		},
+		{
+			name: 'BarrelsDetail04',
+			index: 'BarrelsDetail04',
+			width:'10%', 
+			align:'center',
+			height:400,
+		},
+		{
+			name: 'BarrelsDetail05',
+			index: 'BarrelsDetail05',
+			width:'10%', 
+			align:'center',
+			height:400,
+		},
+		{
+			name: 'BarrelsDetail06',
+			index: 'BarrelsDetail06',
+			width:'10%', 
+			align:'center',
+			height:400,
+		},
+		{
+			name: 'Scraps',
+			index: 'Scraps',
+			width:'20%', 
+			align:'center',
+			height:400,
+		}],
+		loadonce: true,
+		pager: "#pager",
+		sortname: '0',
+		rownumbers: true,
+		viewrecords: true,
+		rowNum:8,
+		height: '100%',
+		autowidth: true,
+		caption: "Barrels  Detail",
+		shrinkToFit: true,
+		loadComplete:function(){
+		var grid = $("#list4");
+		var ids = grid.getDataIDs();
+		for (var i = 0; i < ids.length; i++) {
+			grid.setRowData ( ids[i], false, {height: 50} );
+			grid.closest("div.ui-jqgrid-view").children("div.ui-jqgrid-titlebar").css("text-align", "center").children("span.ui-jqgrid-title").css("float", "none");
+		}
+		}
+	}).navGrid('#nav', {
+		edit: false,
+		add: false,
+		del: false
+	});
+	
+	//防止后退
+	var counter = 0;
+	if (window.history && window.history.pushState) {
+					 $(window).on('popstate', function () {
+									window.history.pushState('forward', null, '#');
+									window.history.forward(1);
+								  
+						});
+	 }
+	window.history.pushState('forward', null, '#'); //在IE中必须得有这两行
+	window.history.forward(1);
+
+	$(".date-time-n").jtime({
+		format: "HH:mm"
+	});
+	$(".date-date-n").jtime({
+		format: "yyyy年MM月dd日<br/>星期W"
+	});
+	
+	informGetCardList();
+	
+});
+</script>
+<script language="javascript"> 
+	//点击打印按钮，触发打印事件
+	function printdiv(printpage) 
+	{ 
+		var newstr = printpage.innerHTML; 
+		var oldstr = document.body.innerHTML; 
+		document.body.innerHTML =newstr; 
+		window.print(); 
+		document.body.innerHTML=oldstr; 
+		return false; 
+	} 
+	var bt=document.getElementById("btnPrint");
+	var div_print=document.getElementById("div_print");
+	bt.onclick=function()
+	{
+		console.log(11111);
+		printdiv(div_print);
+		document.location.reload();
+	}
+</script> 
+<script>
+//将jqgrid导出Excel表格
+function getXlsFromTbl(inTblId, inTblContainerId, title, rownumbers) {
+	//getXlsFromTbl有四个参数：第一个参数是要转换成JQGRID的table的ID，第二个参数是包裹这个table的DIV的ID，第三个是用来拼接导出文件名的,第四个参数是指示是否JQGRID显示了rownumbers，就是最前面那一串序号123456什么的。如果你的JQGRID参数设置了rownumber:true,那这边参数就填true,反之同理,否则导出的的文件列会对歪一列.  
+    try   
+    {    var allStr = "";  
+        var curStr = "";  
+        //alert("getXlsFromTbl");  
+        if (inTblId != null && inTblId != "" && inTblId != "null") {  
+            curStr = getTblData($('#' + inTblId), $('#' + inTblContainerId), rownumbers);  
+        }  
+        if (curStr != null) {  
+            allStr += curStr;  
+        }  
+        else {  
+            alert("你要导出的表不存在！");  
+            return;  
+        }  
+        var fileName = getExcelFileName(title);  
+        doFileExport(fileName, allStr);  
+    }  
+    catch (e) 
+	{  
+        alert("导出发生异常:" + e.name + "->" + e.description + "!");  
+    }  
+}  
+function getTblData(curTbl, curTblContainer, rownumbers) {  
+    var outStr = "";  
+    if (curTbl != null) {  
+        var rowdata = curTbl.getRowData();  
+        var Lenr = 1;  
+  
+        for (i = 0; i < Lenr; i++) {  
+            //var Lenc = curTbl.rows(i).cells.length;  
+            var th;  
+            if (rownumbers == true) {  
+                th = curTblContainer.find('TH:not(:first-child)');  
+            }  
+            else {  
+                th = curTblContainer.find('TH');  
+            }  
+            th.each(function(index, element) {  
+                //alert($(element).text());  
+                //取得每行的列数  
+                var j = index + 1;  
+                var content = $(element).text();  
+                //alert(j + "|" + content);  
+                outStr += content + "\t";  
+                //赋值  
+  
+            });  
+            outStr += "\r\n";  
+        }  
+        var tmp = "";  
+        for (i = 0; i < rowdata.length; i++) {  
+            var row = eval(rowdata[i]);  
+            for (each in row) {  
+                outStr += row[each] + "\t";  
+            }  
+            outStr += "\r\n";  
+        }  
+  
+  
+    }  
+    else {  
+        outStr = null;  
+        alert(inTbl + "不存在!");  
+    }  
+    return outStr;  
+}  
+function getExcelFileName(title) {  
+    var d = new Date();  
+    var curYear = d.getYear();  
+    var curMonth = "" + (d.getMonth() + 1);  
+    var curDate = "" + d.getDate();  
+    var curHour = "" + d.getHours();  
+    var curMinute = "" + d.getMinutes();  
+    var curSecond = "" + d.getSeconds();  
+    if (curMonth.length == 1) {  
+        curMonth = "0" + curMonth;  
+    }  
+    if (curDate.length == 1) {  
+        curDate = "0" + curDate;  
+    }  
+    if (curHour.length == 1) {  
+        curHour = "0" + curHour;  
+    }  
+    if (curMinute.length == 1) {  
+        curMinute = "0" + curMinute;  
+    }  
+    if (curSecond.length == 1) {  
+        curSecond = "0" + curSecond;  
+    }  
+    var fileName = title + "_" + curYear + curMonth + curDate + "_"  
+            + curHour + curMinute + curSecond + ".xls";  
+    //alert(fileName);   
+    return fileName;  
+}  
+function doFileExport(inName, inStr) {  
+    var xlsWin = null;  
+    if (!!document.all("HideFrm")) {  
+        xlsWin = HideFrm;  
+    }  
+    else {  
+        var width = 6;  
+        var height = 4;  
+        var openPara = "left=" + (window.screen.width / 2 - width / 2)  
+                + ",top=" + (window.screen.height / 2 - height / 2)  
+                + ",scrollbars=no,width=" + width + ",height=" + height;  
+        xlsWin = window.open("", "_blank", openPara);  
+    }  
+    xlsWin.document.write(inStr);  
+    xlsWin.document.close();  
+    xlsWin.document.execCommand('Saveas', true, inName);  
+    xlsWin.close();  
+}
+
+$('#export').click(function() {  
+	var title = "Barrels Detail";  
+	getXlsFromTbl('list4', 'jqgrid-wrapper', title, true)  
+});  
+</script>
+</body>
+</html>

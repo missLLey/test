@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/swiper.min.css" />
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/Times.js"></script>
+<script src="js/inspur.swiper.min.js"></script>
+</head>
+
+<body>
+<!-- head区 -->
+<div class="head">
+	<h1><img src="img/1.png" height="80px" alt="" id="logo"></h1>
+</div>
+<!-- content区 -->
+<div class="swiper-container content">
+	<div class="swiper-wrapper">
+    	<div class="swiper-slide">
+        	<h2 class="titleBig">Single Card Exchange</h2>
+            <div class="table">
+            	<table border="1">
+                	<tr>
+                    	<td width="350">Batch Number</td>
+                    	<td width="650" style="text-align:center;"></td>
+                    </tr>
+                	<tr>
+                    	<td width="350">Artwork Reference</td>
+                    	<td width="650" style="text-align:center;"></td>
+                    </tr>
+                	<tr>
+                    	<td width="350">Defect Type</td>
+                    	<td width="650" style="text-align:center;"></td>
+                    </tr>
+                	<tr>
+                    	<td width="350">Machine Number</td>
+                    	<td width="650" style="text-align:center;"></td>
+                    </tr>
+                	<tr>
+                    	<td width="350">Quantity to
+exchange</td>
+                    	<td width="650" style="text-align:center;"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tips tip01">
+            	<h4>Do you confirm the exchange ?</h4>
+                <button class="button yes"></button>
+                <button class="button no" onClick="clickNo();"></button>
+            </div>
+            <div class="tips tip02">
+            	<h4>There is not enough stock for the
+requested referene !
+Issue the stocked quantity ?</h4>
+                <button class="button yes"></button>
+                <button class="button no" onClick="clickNo();"></button>
+            </div>
+            <div class="tips tip03">
+            	<h4>Please insert the scrap card to be
+exchanged ?</h4>
+                <button class="button yes"></button>
+                <button class="button no quit" onClick="clickNo();"></button>
+            </div>
+            <div class="tips tip04">
+            	<h4>Scrap identification …</h4>
+                <h4>Exchange in progress ...</h4>
+                <img src="img/progress.gif" width="500" alt="">
+            </div>
+            <div class="tips tip05">
+            	<h4>Scrap can’t be indentified ! The card is mute or non readable !</h4>
+				<h4>Plase take it back from eCabinet
+input !</h4>
+                <button class="button yes ok"></button>
+            </div>
+            <div class="tips tip06">
+            	<h4>End of Exchange ?</h4>
+                <button class="button yes"></button>
+                <button class="button no"></button>
+                <button class="button abort" onClick="abort();"></button>
+            </div>
+            <div class="tips tip07">
+            	<h4>Exchange sucessfull ?</h4>
+                <button class="button yes"></button>
+                <button class="button no" onClick="abort()"></button>
+            </div>
+            <div class="tips tip08">
+            	<h4>Print ?</h4>
+            </div>
+            <div class="tips tip09">
+            	<h4>eCabinet is loccked !</h4>
+            	<h4>No more action is possible !</h4>
+            	<h4>Please contact your administrator !</h4>
+                <button class="button yes ok" onClick="location.href='00index.html'"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer区 -->
+<div class="footer">
+    <div class="bottom-date-n">
+        <span class="date-time-n"></span><br/>
+        <span class="date-date-n"></span>
+    </div>
+    <button class="button exchange"></button>
+    <button class="button exit" onClick="location.href = '00index.html'"></button>
+</div>
+
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical',
+    loop: true,
+	
+});
+$(document).ready(function() {
+	$('.date-time-n').jtime({ format: 'HH:mm' });
+	$('.date-date-n').jtime({ format: 'yyyy年MM月dd日<br/>星期W' });
+});
+
+$('.exchange').click(function(e) {
+    $('.table').css('opacity','0.3');
+	$('.exchange').css('opacity','0.3');
+	$('.exit').css('opacity','0.3');
+    $('.tip01').css('display','block');
+});
+
+function clickNo(){	
+    $('.table').css('opacity','1');
+	$('.exchange').css('opacity','1');
+	$('.exit').css('opacity','1');
+    $('.tips').css('padding-top','100px');
+    $('.yes').css('margin-top','100px');
+    $('.no').css('margin-top','100px');
+    $('.tips').css('display','none');
+}
+
+$('.tip01 .yes').click(function(e) {
+    $('.tips').css('padding-top','50px');
+    $('.yes').css('margin-top','50px');
+    $('.no').css('margin-top','50px');
+	$('.tip02').show();
+	$('.tip01').hide();
+});
+$('.tip02 .yes').click(function(e) {
+    $('.tips').css('padding-top','80px');
+    $('.yes').css('margin-top','80px');
+    $('.no').css('margin-top','80px');
+	$('.tip03').show();
+	$('.tip02').hide();
+});
+$('.tip03 .yes').click(function(e) {
+    $('.tips').css('padding-top','70px');
+	$('.tip04').show();
+	$('.tip03').hide();
+	setTimeout(function(){	
+		$('.tip05').show();
+		$('.tip04').hide();
+		$('.tips').css({'padding-top':'50px','background':'#d70000'});
+		$('.ok').css('margin-top','40px');
+	},5000)
+});
+$('.tip05 .ok').click(function(e) {
+		$('.tip06').show();
+		$('.tip05').hide();
+		$('.tips').css({'padding-top':'100px','background':'#fbb20a'});
+		$('.no').css('margin-left','15px')
+});
+$('.tip06 .no').click(function(e) {
+	$('.tip03').show();
+	$('.tip06').hide();
+    $('.tips').css('padding-top','80px');
+    $('.yes').css('margin-top','80px');
+    $('.no').css('margin-top','80px');
+});
+$('.tip06 .yes').click(function(e) {
+	$('.tip07').show();
+	$('.tip06').hide();
+    $('.tips').css('padding-top','100px');
+    $('.yes').css('margin-top','100px');
+    $('.no').css('margin-top','100px');
+});
+$('.tip07 .yes').click(function(e) {
+	$('.tip08').show();
+	$('.tip07').hide();
+	setTimeout(function(){
+		clickNo();
+	},3000)
+});
+function abort(){	
+	$('.tip09').show();
+	$('.tip07').hide();
+	$('.tips').css({'padding-top':'50px','background':'#d70000'});
+}
+</script>
+</body>
+</html>

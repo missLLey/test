@@ -1,0 +1,202 @@
+﻿.common-head {
+    height: 105px;
+    width: 1280px;
+}
+
+.common-head > .common-logo-n {
+    margin-left: 40px;
+    margin-top: 50px;
+    display: none;
+}
+
+.common-head > .common-snumber-n {
+    left: 1150px;
+    position: absolute;
+    top: 10px;
+	width:94px;
+	height:72px;
+	display:none;
+   
+}
+.common-body-n { 
+    height: 755px;
+    text-align: center;
+     padding-right: 260px;
+    overflow: hidden;
+}
+.common-body-all-w-n { 
+    height: 755px;
+    text-align: center;
+    overflow: hidden;
+    width: 1280px;
+}
+.common-bottom {}
+.bottom-date-n {
+    color: rgb(101, 176, 240);
+    left: 125px;
+    position: absolute;
+    text-align: center;
+    top: 870px;
+}
+.bottom-date-n > .date-time-n {
+    font-family: Digiface;
+    font-size: 50px;
+}
+.bottom-date-n > .date-date-n { font-size: 18px; }
+.btn {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 7px solid rgb(66,66,66);
+    font-size: 30px;
+    font-family: '微软雅黑 light',微软雅黑;
+    animation: fade-in-ani 0.3s;
+}
+.btn:active {
+    transform: scale(0.9);
+    transition: transform 0.01s;
+}
+
+.btn-back-n {
+    position: absolute;
+    top: 885px;
+    left: 465px;
+    color: white;
+    background-color: rgb(234, 50, 50);
+    border: 7px solid rgb(254,147,167);
+}
+.btn-next-n {
+    position: absolute;
+    top: 885px;
+    left: 760px;
+    color: white;
+    background-color: rgb(0,95,179);
+    border: 7px solid rgb(118,189,255);
+}
+.btn-forward {
+    position: absolute;
+    top: 885px;
+    left: 611px;
+    color: white;
+    background-color: rgb(2,177,204);
+    border: 7px solid rgb(96,203,219);
+}
+.op-tips {
+    position: absolute;
+    top: 942px;
+    left: 590px;
+    font-size: 14px;
+    width: 205px;
+    color: rgb(94,94,94);
+    line-height: 20px;
+    display: none;
+}
+.op-tips:before {
+    position: relative;
+    right: 10px;
+    top: 5px;
+    content: url('/resource/img/ico_point.png');
+    display: none;
+}
+
+.fade-in {
+    animation: fade-in-ani 0.2s;
+}
+@keyframes fade-in-ani {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+embed {
+    animation: fade-in-ani 0.5s;
+}
+@keyframes fade-ani {
+    /*0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }*/
+}
+.progress-bar {
+    height: 32px;
+    width: 700px;
+    margin-left: 160px;
+    margin-top: 100px;
+    background-size: 32px 32px;
+    background-image: linear-gradient(135deg, rgb(96, 203, 219) 0%,rgb(86, 193, 209) 25%, transparent 25%, transparent 50%, rgb(96, 203, 219) 50%, rgb(86, 193, 209) 75%, transparent 75%, transparent); 
+    animation: progress 7s infinite linear;
+    border-radius: 16px;
+    border:1px solid rgb(96, 203, 219) ;
+}
+@keyframes progress {
+    0% {
+        background-position: -350px 0;
+    }
+    100% {
+        background-position: 350px 0;
+    }
+}
+
+button {
+    font-family: "Microsoft YaHei light","Microsoft YaHei",'微软雅黑', '微软雅黑 light';
+}
+
+input {
+    font-family: "Microsoft YaHei light","Microsoft YaHei",'微软雅黑', '微软雅黑 light';
+}
+.btn-add {
+    position: absolute;
+    top: 885px;
+    left: 330px;
+    color: white;
+    background-color: rgb(0, 88, 174);
+    border: 7px solid rgb(81, 164, 235);
+}
+.btn-stop {
+    position: absolute;
+    top: 885px;
+    left: 520px;
+    color: white;
+    background-color: rgb(234, 50, 50);
+    border: 7px solid rgb(254,147,167);
+}
+.btn-back-admin {
+    position: absolute;
+    top: 885px;
+    left: 710px;
+    color: white;
+    background-color: rgb(0, 88, 174);
+    border: 7px solid rgb(81, 164, 235);
+}
+.btn-back-user {
+    position: absolute;
+    top: 885px;
+    left: 900px;
+    color: white;
+     background-color: rgb(0, 88, 174);
+    border: 7px solid rgb(81, 164, 235);
+}
+.btn-back-user1 {
+	width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: 7px solid rgb(66,66,66);
+    font-size: 30px;
+    font-family: '微软雅黑 light',微软雅黑;
+    animation: fade-in-ani 0.3s;
+    position: absolute;
+    top: 885px;
+    left: 900px;
+    color: white;
+     background-color: rgb(0, 88, 174);
+    border: 7px solid rgb(81, 164, 235);
+}
+

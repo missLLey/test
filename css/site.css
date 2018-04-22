@@ -1,0 +1,28 @@
+﻿html { 
+    -ms-touch-action: none;
+    -ms-content-zooming: none;
+    /**-webkit-user-select: none;*/
+    -ms-user-select: none;
+}
+body {
+    height: 1024px;
+    width: 1280px;
+    font-family: "Microsoft YaHei light","Microsoft YaHei",'微软雅黑', '微软雅黑 light';
+    font-size: 10px;
+    overflow: hidden;
+    margin: 0;
+}
+progress {
+    margin-top: 90px;
+}
+.intoAdmin{
+	height: 200px;
+	width:200px;
+}
+.tip{
+	color: rgb(77, 96, 130);
+    display: block;
+    font-size: 28px;
+    margin-top: 5px;
+}
+

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/swiper.min.css" />
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/Times.js"></script>
+<script src="js/inspur.swiper.min.js"></script>
+</head>
+
+<body>
+<!-- head区 -->
+<div class="head">
+	<h1><img src="img/1.png" height="80px" alt="" id="logo"></h1>
+</div>
+<!-- content区 -->
+<div class="content">
+    <h2 class="titleBig">Inventory</h2>
+    <table class="table1 inventTable1" border="1">
+        <th>
+            <td>Stock</td>
+            <td>Scraps</td>
+        </th>
+        <tr>
+            <td>Artwork Quantity</td>
+            <td>125</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Card Quantity</td>
+            <td>2250</td>
+            <td>750</td>
+        </tr>
+        <tr>
+            <td>Available slots</td>
+            <td>750</td>
+            <td>250</td>
+        </tr>
+    </table>
+    <table class="table1 inventTable1" border="1">
+        <tr>
+            <td></td>
+            <td colspan="6" id="barrels">
+                <h4 style="font-size:30px; line-height:40px;">Barrels Detail</h4>
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:150px;">Card Quantity</td>
+            <td>125</td>
+            <td>125</td>
+            <td>125</td>
+            <td>125</td>
+            <td>125</td>
+            <td>125</td>
+        </tr>
+        <tr>
+            <td>Available slots</td>
+            <td>375</td>
+            <td>375</td>
+            <td>375</td>
+            <td>375</td>
+            <td>375</td>
+            <td>375</td>
+        </tr>
+    </table>
+</div>
+<!-- footer区 -->
+<div class="footer">
+    <div class="bottom-date-n">
+        <span class="date-time-n"></span><br/>
+        <span class="date-date-n"></span>
+    </div>
+    <button class="button exchange stock" onClick="location.href = '3-1.Inventory.html'"></button>
+    <button class="button exit exit1" onClick="location.href = '2loadOrUnload.html'"></button>
+</div>
+
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical',
+    loop: true,
+	
+});
+$(document).ready(function() {
+	$('.date-time-n').jtime({ format: 'HH:mm' });
+	$('.date-date-n').jtime({ format: 'yyyy年MM月dd日<br/>星期W' });
+});
+</script>
+</body>
+</html>

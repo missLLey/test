@@ -1,0 +1,313 @@
+@charset "utf-8";
+/* CSS Document */
+#logo{	
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.titleBig{	
+	line-height: 130px;
+}
+#btnBox{	
+	width: 1040px;
+	height: 550px; 
+	margin-left: 120px;
+	overflow: hidden;
+	display:flex; 
+	flex-wrap:wrap;
+	padding-top: 30px;
+}
+.btn-cardapply {
+    background: linear-gradient(180deg,rgb(224,240,253),rgb(194,228,253));
+    border: rgb(136, 200, 246) 1px solid;
+    box-shadow: 0 5px 0 rgb(163,225,246);
+    color: rgb(5, 127, 174);
+}
+.btn-ebanking {
+    background: linear-gradient(180deg,rgb(240,232,253),rgb(208,192,255));
+    border: rgb(172,157,248) 1px solid;
+    box-shadow: 0 5px 0 rgb(214,206,253);
+    color: rgb(86,2,175);
+}
+.btn-query {
+    background: linear-gradient(180deg,rgb(229,254,225),rgb(214,253,208));
+    border: rgb(132,193,89) 1px solid;
+    box-shadow: 0 5px 0 rgb(180,230,179);
+    color: rgb(88,130,2);
+}
+.btn-transfer {
+    background: linear-gradient(180deg,rgb(255,230,231),rgb(254,194,194));
+    border: rgb(251,193,205) 1px solid;
+    box-shadow: 0 5px 0 rgb(239,174,172);
+    color: rgb(177,5,19);
+}
+.btn-shutdown {
+    /* background: linear-gradient(180deg,rgb(254, 225, 240),rgb(0,95,179)); */
+    border: rgb(77, 96, 130) 1px solid;
+    box-shadow: 0 5px 0 rgba(77, 96, 130, 0.44);
+    color: rgb(77, 96, 130);
+    background: linear-gradient(rgb(255, 225, 255),rgba(86,2,175,0.5));
+}
+.btn-reboot {
+    /* background: linear-gradient(180deg,rgb(245, 246, 163),rgb(246, 243, 163)); */
+    border: rgb(117, 117, 117) 1px solid;
+    box-shadow: 0 5px 0 rgba(117, 117, 117, 0.53);
+    color: rgb(0, 88, 174);
+    background: #5fa9ef;
+}
+
+.table{	
+	width: 1000px;
+	height:auto;
+	margin-top: 30px;
+}
+.table tr{ 
+	height: 90px;
+	line-height:90px;	
+	font-size: 28px;
+}
+.footer{	
+	position: relative;
+}
+.button{	
+	touch-action: manipulation;
+	animation: fade-in-ani 0.3s;
+	cursor: pointer;
+}
+.button:active {
+    transform: scale(0.9);
+    box-shadow: 0px 0px 0px 200px rgba(0,0,0,0.2) inset;
+    
+}
+.exchange{	
+	width: 245px;
+	height: 105px;
+	border-radius: 10px;
+	position: absolute;
+	top: 30px;
+	left: 350px;
+	border:none;
+	background: url(../img/btnExchange.png) no-repeat 1px;
+}
+.exit{	
+	position: absolute;
+	top: 30px;
+	left: 750px;
+	width: 245px;
+	height: 105px;
+	border-radius: 10px;
+	background: url(../img/btnExIT.png) no-repeat;
+	border:none;
+}
+.content{	
+	position: relative;
+}
+.tips{	
+	width: 700px;
+	height: 400px;
+	border: 1px solid #000;
+	border-radius: 20px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -350px;
+	margin-top: -170px;
+	background: #fbb20a;
+	padding-top: 100px;
+	font-size: 40px;
+	color: #fff;
+	display: none;
+}
+.yes{	
+	width: 205px;
+	height: 86px;
+	background: url(../img/yes.png) no-repeat;
+	border: none;
+	margin-top: 100px;
+}
+.no{	
+	width: 205px;
+	height: 86px;
+	background: url(../img/no.png) no-repeat;
+	border: none;
+	margin-left: 80px;
+	margin-top: 100px;
+}
+.abort{	
+	width: 205px;
+	height: 86px;
+	background: url(../img/ABORT.png) no-repeat;
+	border: none;
+	margin-left: 15px;
+	margin-top: 100px;
+}
+
+.quit{	
+	background: url(../img/QUIT.png) no-repeat;
+}
+.ok{
+	width: 205px;
+	height: 86px;
+	border: none;
+	background: url(../img/ok.png) no-repeat;
+}
+.empty{	
+	background: url(../img/emptying.png) no-repeat;
+}
+#unload{	
+	background: url(../img/unload.png) no-repeat;
+	display:block;
+	margin-top: 20px;
+	float: right;
+	margin-right: 325px;
+	margin-left: 0;
+}
+#load{
+	background: url(../img/loading.png) no-repeat;
+	display:block;
+	margin-top: 20px;
+	float: left;
+	margin-left: 390px;
+}
+.ui-jqgrid .ui-jqgrid-htable th div{	
+	overflow: visible;
+	margin-top: 0;
+}
+table{	
+	width: 1000px;
+	height:auto;
+	margin-left: 140px;
+}
+.table1 tr{ 
+	height: 50px;
+	line-height:50px;	
+	font-size: 28px;
+}
+.stock{	
+	background: url(../img/StockDetail.png);
+}
+.inventTable1{	
+	margin-bottom: 60px;
+}
+.inventTable1 tr{	
+	line-height: 40px;
+}
+#barrels span{	
+	display: inline-block;
+	width: 142px;
+	height: auto;
+	text-align: center;
+}
+.printDetail{	
+	background: url(../img/PrintDetail.png) no-repeat;
+	left:300px;
+}
+.saveDetail{	
+	background: url(../img/saveDetail.png) no-repeat;
+	left: 600px;
+}
+.exit2{
+	left: 900px;
+}
+table tr{	
+	line-height: 50px;
+}
+#barrelDetail span{	
+	display: inline-block;
+	width: 80px;
+	line-height: 30px;
+	text-align: center;
+}
+.ui-jqgrid .ui-jqgrid-htable th div{ overflow: visible; line-height: 40px;}
+#pager,#pg_pager{ height: 50px;}
+.ui-jqgrid .ui-pg-table td{ padding: 0 10px; line-height: 50px; font-size: 20px; letter-spacing: 5px;}
+.ui-jqgrid .ui-pg-input{ text-align: center; width: 35px; height: 18px; line-height: 18px; font-size: 20px;}
+.ui-jqgrid .ui-paging-info{ margin-top: -18px; display: none;}
+.contentBox{	
+	width: 1109px;
+	height: 590px;
+	margin-left: 85px;
+	background: #ec922d;
+	border: 1px solid #000;
+	border-radius: 0 0 25px 25px;
+	box-shadow: 5px 0 40px rgba(0,0,0,0.7);
+}
+#tableBar li{	
+	font-size: 22px;
+	font-weight: bold;
+	width: 111px;
+	height: 46px;
+	line-height: 46px;
+	padding-top: 2px;
+	text-align: center;
+	background: url(../img/loader1.png) no-repeat;
+	position: relative;
+	top: -25px;
+	cursor: pointer;
+}
+.exit5{	
+	left: 540px;
+}
+.loader{	
+	position: relative;
+	top: -25px;
+	padding: 0 20px 5px;
+	display:none;
+}
+.switch{	
+	margin: 5px 0 0 10px;
+	border-bottom: 1px solid #000;
+}
+.switch li p>span{	
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border-radius:50%;
+	background: url(../img/btnCheck.png) no-repeat 0px 0px;
+	margin-right: 15px;
+}
+.switch li{	
+	text-align: left;
+	height: 86px;
+}
+.switch li:nth-child(1){
+	width: 130px;
+	line-height: 86px;
+	position: relative;
+}
+.btnSwitch{	
+	position: absolute;
+	visibility: hidden;
+	width: 125px;
+	height: 60px;
+}
+.btnSwitch+label {
+	display: inline-block;
+	width: 125px;
+	height: 60px;
+	background: url(../img/switchOn.png);
+	margin-top: 18px;
+	margin-left: -10px;
+}  
+.btnSwitch:checked+label {
+	background: url(../img/switchOFF.png) no-repeat center center;
+	margin-top: 15px;
+}
+.switch li:nth-child(2){
+	width: 500px;
+	line-height: 86px;
+}
+.switch li:nth-child(3){
+	width: 470px;
+	line-height: 44px;
+}
+
+#tableBar .current{	
+	background: url(../img/loader2.png) no-repeat;
+	color:#fff;
+}
+button{	
+	cursor: pointer;
+}
+.cur{	
+	display: block;
+}

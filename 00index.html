@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/swiper.min.css" />
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/Times.js"></script>
+<script src="js/inspur.swiper.min.js"></script>
+</head>
+
+<body>
+<!-- head区 -->
+<div class="head">
+	<h1><img src="img/1.png" height="80px" alt="" id="logo"></h1>
+</div>
+<!-- content区 -->
+<div class="swiper-container content">
+	<div class="swiper-wrapper">
+    	<div class="swiper-slide">
+        	<h2 class="titleBig">Alert Messages</h2>
+            <div id="btnBox">
+                <br/>
+                <button class="btn btn-cardapply" id="F1" onclick=" WaitCartButtononclick(this.id) ">
+                    <span>Single Card Exchange</span>
+                </button>
+                <button class="btn btn-ebanking" id="F2" onclick=" WaitCartButtononclick(this.id) ">
+                    <span>Load / Unload eCabinet</span>
+                </button>
+                <button class="btn btn-query" id="F3" onclick=" WaitCartButtononclick(this.id) ">
+                    <span>Inventory</span>
+                </button>
+                <br/>
+                <br/>
+                <button class="btn btn-transfer" id="F4" onclick=" WaitCartButtononclick(this.id) ">
+                    <span>Maintenance</span>
+                </button>
+                <button class="btn btn-shutdown" id="F5" onclick=" WaitCartButtononclick(this.id) ">
+                    <span>Administration</span>
+                </button>
+<!--                <button class="btn btn-reboot" id="F6" onclick=" WaitCartButtononclick(this.id) ">
+                    <span>重启</span>
+                </button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer区 -->
+<div class="footer">
+    <div class="bottom-date-n">
+        <span class="date-time-n"></span><br/>
+        <span class="date-date-n"></span>
+    </div>
+</div>
+
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical',
+    loop: true,
+});
+$(document).ready(function() {
+	$('.date-time-n').jtime({ format: 'HH:mm' });
+	$('.date-date-n').jtime({ format: 'yyyy年MM月dd日<br/>星期W' });
+});
+window.WaitCartButtononclick = function (id) {
+	switch (id) {
+		case "F1":
+			location.href = '1SingleCardExchange.html';
+			break;
+		case "F2":
+			location.href = '2loadOrUnload.html';
+			break;
+		case "F3":
+			location.href = '3Inventory.html';
+			break;
+		case "F4":
+			location.href = '4Maintenance.html';
+			break;
+		case "F5":
+			location.href = '5Administration.html';
+			break;
+		default:
+	}
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+
+input::-ms-clear {
+  display: none;
+}
+.flow-title {
+  font-size: 30px;
+  color: rgb(77, 96, 130);
+  margin-top: 60px;
+  display: block;
+}
+.number-pro {
+  display: inline-block;
+  margin-left: 9px;
+  margin-right: 9px;
+  color: rgb(216,39,28);
+  font-weight: bold;
+}
+.flow-title-confirm {
+  font-size: 27px;
+  color: rgb(0,89,176);
+  font-weight: bold;
+  display: block;
+}
+.flow-tips {
+  margin-top: 30px;
+  font-size: 25px;
+  color: rgb(77, 96, 130);
+  display: block;
+}
+.flow-tips img {
+  position: relative;
+  top: 5px;
+}
+.flow-title-tips {
+  display: block;
+  margin-top: 25px;
+  font-size: 22px;
+  line-height: 25px;
+  color: rgb(0,91,172);
+}
+.flow-title-tips .tips-in {
+  font-size: 25px;
+  line-height: 25px;
+}
+.cut-hr {
+  display: block;
+  margin: 30px 50px;
+  border-top: rgb(1,178,204) 0.5px solid;
+  background: rgb(1,178,204);
+  color: rgb(1,178,204);
+}
+.img-fix {
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+.img-fix-confirm {
+    margin-right: 8px;
+    position: relative;
+  height:49px;
+  padding-top:23px;
+  box-sizing:border-box;
+  vertical-align: text-bottom;
+}
+.img-box {
+  vertical-align: text-bottom;
+  margin-right: 8px;
+  position: relative;
+    top: 4px;
+  height:49px;
+}
+.id-img-fix {
+  width: 430px;
+  margin: 0 15px;
+}
+.character-top {
+  position: relative;
+  top: 5px;
+}
+.character-bottom {
+  position: relative;
+  top: -10px;
+}
+.btn-type {
+  display: inline-block;
+  margin: 35px 40px;
+  width: 280px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(116,189,254);
+}
+.btn-type span {
+  display: inline-block;
+  position: relative;
+  top: -22px;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  color: white;
+}
+.btn-type:after {
+  content: url('../../resource/img/liftlost/ico_arrow_right.png');
+  position: relative;
+  display: inline-block;
+  left: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(81,164,235);
+}
+.btn-type:active {
+  transform: scale(0.9);
+  background-color: rgb(81,164,235);
+  transition: transform 0.1s, background-color 0.1s;
+}
+.btn-type:active:after {
+  background-color: rgb(32,123,202);
+  transition: background-color 0.1s;
+}
+.clear {
+  clear: both;
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+.flash-animate {
+  margin-top: 50px;
+}
+.btn-font {
+  font-size: 28px;
+}
+/*4_3确认信息页面样式*/
+.panel-teller-left {
+    width: 320px;
+    text-align: center;
+    float: left;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.panel-teller-left>table{
+    width: 320px;
+}
+.panel-teller-left>table:first-child{
+    margin-top: 30px;
+    width: 320px;
+}
+.panel-teller-left>table>tbody>tr>td{
+    font-size: 20px;
+    text-align: left;
+}
+.teller-left-short {
+    width: 70px;
+}
+.teller-left-long {
+    width: 100px;
+}
+.teller-right-long {
+    width: 220px;
+    max-width: 180px;
+    word-wrap:break-word;
+}
+.teller-title {
+    color: rgb(22, 102, 178);
+    font-size: 24px;
+}
+.panel-teller-right {
+    width: 640px;
+    text-align: center;
+    float: left;
+    margin-top: 50px;
+}
+.panel-teller-right>table{
+    width: 640px;
+}
+.panel-teller-right .pic-img{
+    width: 164px;
+    height: 202px;
+    border: rgb(158, 197, 202) 1px solid;
+    margin-top: 10px;
+}
+.panel-teller-right>table>tbody>tr:first-child>td{
+    border-bottom: black 1px dashed;
+    text-align: center;
+}
+.panel-teller-right>table>tbody>tr:first-child>td>span{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: block;
+}
+.panel-teller-right td+td{
+    border-left: black 1px dashed;
+}
+.panel-teller-right .id-img{
+    width: 284px;
+    height: 178px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgb(170, 170, 170);
+}
+
+
+
